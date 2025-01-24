@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madelein Monzón - Inmobiliaria</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/carousel.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gradient-to-r from-green-600 to-blue-600 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Madelein Monzón</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a class="hover:underline" href="#about">Sobre Mí</a></li>
+                    <li><a class="hover:underline" href="#por-que">¿Por Qué Trabajar Conmigo?</a></li>
+                    <li><a class="hover:underline" href="#ventas">Propiedades en Venta</a></li>
+                    <li><a class="hover:underline" href="#alquileres">Propiedades en Alquiler</a></li>
+                    <li><a class="hover:underline" href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto p-4">
+        <section id="about" class="mb-8">
+            <div class="bg-white p-6 rounded shadow">
+                <div class="flex flex-col md:flex-row items-center">
+                    <img src="imgs/profile2.png" alt="Foto de Madelein Monzón" class="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6">
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">Sobre Mí</h2>
+                        <p class="text-gray-700">
+                            Soy Madelein Monzón, una profesional venezolana con más de 20 años de experiencia en el sector inmobiliario. He trabajado tanto en Venezuela como en Argentina, consolidando una trayectoria de confianza y profesionalismo en cada transacción.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded shadow mt-6">
+                <h3 class="text-xl font-bold mb-4">Mi Experiencia</h3>
+                <p class="text-gray-700">
+                    En Venezuela, fui propietaria de mi propia inmobiliaria y trabajé por cinco años en Century 21, desarrollando habilidades estratégicas en la gestión y negociación de propiedades. En Argentina, continué mi carrera trabajando en Century 21 y Deinmobiliario. Actualmente, formo parte de Grupo Tarno Bienes Raíces.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded shadow mt-6">
+                <h3 class="text-xl font-bold mb-4">Formación Académica</h3>
+                <p class="text-gray-700">
+                    Mi formación académica incluye títulos en Administración y Derecho, que me permiten abordar cada operación inmobiliaria desde una perspectiva estratégica y legal. Actualmente, estoy cursando la carrera de Martillero en Argentina para seguir perfeccionando mi conocimiento y ofrecer un servicio integral.
+                </p>
+            </div>
+        </section>
+        <section id="por-que" class="mb-8">
+            <div class="bg-white p-6 rounded shadow">
+                <h2 class="text-2xl font-bold mb-4">¿Por Qué Trabajar Conmigo?</h2>
+                <ul class="list-disc pl-6 text-gray-700">
+                    <li><strong>Experiencia comprobada:</strong> Más de 20 años en el mercado inmobiliario.</li>
+                    <li><strong>Conocimientos legales y administrativos:</strong> Títulos en Administración y Derecho.</li>
+                    <li><strong>Atención personalizada:</strong> Cada cliente recibe un servicio adaptado a sus necesidades.</li>
+                    <li><strong>Compromiso y ética profesional:</strong> Garantizo transacciones seguras y efectivas.</li>
+                    <li><strong>Formación continua:</strong> Actualmente cursando la carrera de Martillero en Argentina.</li>
+                </ul>
+            </div>
+        <section>
+            <!-- Sección de Carruseles cargada desde otro archivo -->
+            <iframe src="carrusel.html" style="width: 100%; border: none;" height="900"></iframe>
+        </section>
+
+        <section id="contacto" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Contacto</h2>
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-xl font-bold mb-4">Información de Contacto</h3>
+                <ul class="text-gray-700 space-y-2">
+                    <li><strong>Email (Trabajo):</strong> <a href="mailto:m.monzon@grupotarno.com" class="text-blue-500">m.monzon@grupotarno.com</a></li>
+                    <li><strong>Email (Personal):</strong> <a href="mailto:Madeleinmonzonp@gmail.com" class="text-blue-500">Madeleinmonzonp@gmail.com</a></li>
+                    <li><strong>Teléfono:</strong> <a href="tel:+541126639789" class="text-blue-500">1126639789</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/madelein-monzon-976615174?trk=contact-info" target="_blank" class="text-blue-500">Perfil de LinkedIn</a></li>
+                </ul>
+            </div>
+            <form id="contact-form" action="/contacto" method="POST" class="bg-white p-6 rounded shadow mt-6">
+                <h3 class="text-xl font-bold mb-4">Formulario de Contacto</h3>
+                <div class="mb-4">
+                    <label for="nombre" class="block text-gray-700 font-bold">Nombre:</label>
+                    <input type="text" id="nombre" name="name" required class="w-full p-2 border border-gray-300 rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-bold">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-300 rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="telefono" class="block text-gray-700 font-bold">Teléfono:</label>
+                    <input type="tel" id="telefono" name="phone" class="w-full p-2 border border-gray-300 rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="mensaje" class="block text-gray-700 font-bold">Mensaje:</label>
+                    <textarea id="mensaje" name="message" rows="5" required class="w-full p-2 border border-gray-300 rounded"></textarea>
+                </div>
+                <button type="submit" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded shadow">Enviar</button>
+            </form>
+        </section>
+        <footer class="bg-gradient-to-r from-green-600 to-blue-600 text-white p-4 text-center">
+            <p>&copy; 2025 Madelein Monzón. Todos los derechos reservados.</p>
+            <div class="mt-2">
+                <p>Teléfono: <a href="tel:+541126639789" class="text-white">1126639789</a></p>
+                <p>Email: <a href="mailto:m.monzon@grupotarno.com" class="text-white">m.monzon@grupotarno.com</a></p>
+                <p><a href="https://www.linkedin.com/in/madelein-monzon-976615174?trk=contact-info" target="_blank" class="text-white">LinkedIn</a></p>
+            </div>
+        </footer>        
+        </section>
+    </main>
+    <footer class="bg-gradient-to-r from-green-600 to-blue-600 text-white p-4 text-center">
+        <p>&copy; 2025 Madelein Monzón. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (!name || !email || !message) {
+                e.preventDefault();
+                alert('Por favor, completa todos los campos requeridos.');
+            }
+        });
+    </script>
+</body>
+</html>

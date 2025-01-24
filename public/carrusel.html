@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carruseles</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="js/carousel.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <section id="ventas" class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">Propiedades en Venta</h2>
+        <div class="carousel-container">
+            <button onclick="moveSlide(-1)" class="carousel-btn left">&lt;</button>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="imgs/Barracas.png" alt="Departamento Barracas">
+                    <p><strong>Departamento 95m² · 5 ambientes</strong><br>Barracas, Capital Federal</p>
+                    <a href="https://www.zonaprop.com.ar/propiedades/clasificado/veclapin-departamento-de-4-ambientes-mas-dependencia-de-55382177.html" target="_blank" class="text-blue-500">Más información</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/SanCristobal.png" alt="PH San Cristobal">
+                    <p><strong>PH · 76m² · 2 ambientes</strong><br>San Cristobal, Capital Federal</p>
+                    <a href="https://www.zonaprop.com.ar/propiedades/clasificado/veclphin-ph-en-venta-76-m-de-2-ambientes-con-patio-y-terraza-53493857.html" target="_blank" class="text-blue-500">Más información</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/Paternal2.png" alt="Departamento La Paternal">
+                    <p><strong>Departamento · 2m² · 1 ambiente</strong><br>La Paternal, Capital Federal</p>
+                    <a href="https://www.zonaprop.com.ar/propiedades/clasificado/veclphin-ph-en-venta-76-m-de-2-ambientes-con-patio-y-terraza-53493857.html" target="_blank" class="text-blue-500">Más información</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/VillaUrquiza.png" alt="Departamento Villa Urquiza">
+                    <p><strong>Departamento · 35m² · 1 ambiente · 1 cochera</strong><br>Villa Urquiza, Capital Federal</p>
+                    <a href="https://www.zonaprop.com.ar/propiedades/clasificado/veclapin-departamento-con-cochera-55166625.html" target="_blank" class="text-blue-500">Más información</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/paternalMono.png" alt="Monoambiente La Paternal">
+                    <p><strong>Departamento · 22m²</strong><br>Monoambiente con Balcón Amoblado<br>La Paternal, Capital Federal</p>
+                    <a href="https://www.zonaprop.com.ar/propiedades/clasificado/veclapin-venta-monoambiente-con-balcon-amoblado-a-la-medida-53780401.html" target="_blank" class="text-blue-500">Más información</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/Caballito3Ambientes.png" alt="Departamento Caballito">
+                    <p><strong>Departamento · 68m² · 3 ambientes</strong><br>Caballito, Capital Federal</p>
+                    <a href="https://www.zonaprop.com.ar/propiedades/clasificado/veclapin-departamento-a-estrenar-de-3-ambientes-con-amplio-53160221.html" target="_blank" class="text-blue-500">Más información</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/CaballitoMonoambiente.png" alt="Monoambiente Caballito">
+                    <p><strong>Departamento · 31m² · 1 ambiente</strong><br>Caballito, Capital Federal</p>
+                    <a href="https://www.zonaprop.com.ar/propiedades/clasificado/veclapin-departamento-a-estrenar-monoambiente-53160343.html" target="_blank" class="text-blue-500">Más información</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/Caballito2Ambientes.png" alt="Departamento Caballito">
+                    <p><strong>Departamento · 47m² · 2 ambientes</strong><br>Caballito, Capital Federal</p>
+                    <a href="https://www.zonaprop.com.ar/propiedades/clasificado/veclapin-departamento-a-estrenar-de-2-ambientes-53163000.html" target="_blank" class="text-blue-500">Más información</a>
+                </div>
+            </div>
+            <button onclick="moveSlide(1)" class="carousel-btn right">&gt;</button>
+        </div>
+    </section>
+
+    <section id="alquileres" class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">Propiedades en Alquiler</h2>
+        <div class="carousel-container">
+            <button onclick="moveSlide(-1)" class="carousel-btn left">&lt;</button>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="imgs/alquiler5ambientes.png" alt="Departamento Las Cañitas">
+                    <p><strong>Departamento · 163m² · 6 ambientes</strong><br>Alquiler USD 1.500<br>Las Cañitas, Palermo</p>
+                    <a href="https://www.zonaprop.com.ar/propiedades/clasificado/alclapin-amplio-y-comodo-departamento-de-5-ambientes-en-las-55336463.html" target="_blank" class="text-blue-500">Más información</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/PalermoMonoambienteAlquiler.png" alt="Monoambiente Palermo">
+                    <p><strong>Departamento · 44m² · 1 ambiente</strong><br>Alquiler USD 600<br>Palermo, Capital Federal</p>
+                    <a href="https://www.zonaprop.com.ar/propiedades/clasificado/alclapin-monoambiente-amoblado-y-equipado-con-balcon.-55381938.html" target="_blank" class="text-blue-500">Más información</a>
+                </div>
+            </div>
+            <button onclick="moveSlide(1)" class="carousel-btn right">&gt;</button>
+        </div>
+    </section>
+
+    <script src="js/carousel.js"></script>
+</body>
+
+</html>

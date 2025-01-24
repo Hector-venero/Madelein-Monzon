@@ -1,0 +1,72 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9fc; /* Color de fondo clarito */
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 90%; /* Utiliza el 100% del ancho disponible */
+    max-width: 80%; /* Ancho máximo del carrusel ajustado al 90% de la pantalla */
+    margin: 20px auto; /* Centra el carrusel */
+    background-color: #ffffff; /* Fondo blanco para destacar el carrusel */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.carousel-item img {
+    width: 100%; /* Las imágenes ocupan todo el ancho del carrusel */
+    height: 400px; /* Aumenta la altura fija para mayor visibilidad */
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+    border-radius: 8px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-btn.left {
+    left: 10px;
+}
+
+.carousel-btn.right {
+    right: 10px;
+}
+
+/* Espaciado entre secciones */
+section {
+    margin-bottom: 30px;
+}
+
+/* Encabezados destacados */
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Ajuste general de márgenes */
+.container {
+    padding: 20px;
+}
